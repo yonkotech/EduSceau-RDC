@@ -1,0 +1,78 @@
+@import url("../global.css");
+
+.container {
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.steps span {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: lightgray;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.form-step {
+  display: none;
+}
+
+input#step1:checked ~ .step-content .step1,
+input#step2:checked ~ .step-content .step2,
+input#step3:checked ~ .step-content .step3,
+input#step4:checked ~ .step-content .step4 {
+  display: block;
+}
+
+.form-step {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.navigation label {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+label[for]:hover {
+  background-color: #0056b3;
+}
+
+

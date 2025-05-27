@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription - Carrousel Étapes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .steps {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .steps span {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: lightgray;
+      display: inline-block;
+      text-align: center;
+      line-height: 25px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .form-step {
+      display: none;
+    }
+
+    input#step1:checked ~ .step-content .step1,
+    input#step2:checked ~ .step-content .step2,
+    input#step3:checked ~ .step-content .step3,
+    input#step4:checked ~ .step-content .step4 {
+      display: block;
+    }
+
+    .form-step {
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+
+    .navigation label {
+      background-color: #007BFF;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    label[for]:hover {
+      background-color: #0056b3;
+    }
+
+    input, select {
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="container">
+    <!-- Étapes radio -->
+    <input type="radio" name="step" id="step1" checked>
+    <input type="radio" name="step" id="step2">
+    <input type="radio" name="step" id="step3">
+    <input type="radio" name="step" id="step4">
+
+    <!-- Progression -->
+    <div class="steps">
+      <span>1</span><span>2</span><span>3</span><span>4</span>
+    </div>
+
+    <!-- Contenu des étapes -->
+    <div class="step-content">
+      <!-- Étape 1 -->
+      <div class="form-step step1">
+        <h2>Informations personnelles</h2>
+        <input type="text" placeholder="Nom complet" required>
+        <input type="email" placeholder="Adresse email" required>
+        <div class="navigation">
+          <span></span>
+          <label for="step2">Suivant</label>
+        </div>
+      </div>
+
+      <!-- Étape 2 -->
+      <div class="form-step step2">
+        <h2>Détails du compte</h2>
+        <input type="password" placeholder="Mot de passe" required>
+        <input type="password" placeholder="Confirmer le mot de passe" required>
+        <div class="navigation">
+          <label for="step1">Précédent</label>
+          <label for="step3">Suivant</label>
+        </div>
+      </div>
+
+      <!-- Étape 3 -->
+      <div class="form-step step3">
+        <h2>Préférences</h2>
+        <select>
+          <option>Choisissez un rôle</option>
+          <option>Utilisateur</option>
+          <option>Administrateur</option>
+        </select>
+        <label>
+          <input type="checkbox"> Recevoir les notifications
+        </label>
+        <div class="navigation">
+          <label for="step2">Précédent</label>
+          <label for="step4">Suivant</label>
+        </div>
+      </div>
+
+      <!-- Étape 4 -->
+      <div class="form-step step4">
+        <h2>Confirmation</h2>
+        <p>Veuillez vérifier vos informations avant de soumettre.</p>
+        <div class="navigation">
+          <label for="step3">Précédent</label>
+          <button type="submit" style="background:#28a745;color:white;padding:0.5rem 1rem;border:none;border-radius:5px;">S'inscrire</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</body>
+</html>

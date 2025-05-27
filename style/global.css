@@ -5,6 +5,7 @@
     --background-clr: white;
 }
 body{
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url("https://picsum.photos/1000");
     background-repeat: no-repeat;
     background-size: cover;

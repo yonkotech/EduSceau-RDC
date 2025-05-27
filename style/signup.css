@@ -1,0 +1,17 @@
+.signup-form {
+  overflow-x: hidden;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+  /* transform: translateX(-400px); */
+}
+
+
+.signup-form#step1 .form-frame{
+    transform: translateX(-644px);
+}
