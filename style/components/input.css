@@ -1,0 +1,12 @@
+@import url("../global.css");
+
+.input{
+    position: relative;
+}
+
+.input>label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--secondary-clr);
+}
