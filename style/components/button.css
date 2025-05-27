@@ -1,0 +1,52 @@
+.btn {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.134em 0.536em;
+    border: 2px solid dodgerblue;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16),
+        0 2px 4px rgba(0, 0, 0, 0.1);
+    color: dodgerblue;
+    text-decoration: none;
+    background: #eee;
+    transition: 0.3s ease all;
+    z-index: 1;
+    cursor: pointer;
+    height: 34px;
+    outline: none;
+}
+
+.btn:before {
+    transition: 0.3s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background: dodgerblue;
+    z-index: -1;
+}
+
+.btn:hover,
+.btn:focus {
+    color: white;
+}
+
+.btn:hover:before,
+.btn:focus:before {
+    transition: 0.2s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
