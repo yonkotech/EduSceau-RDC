@@ -1,0 +1,24 @@
+@import url("global.css");
+
+form{
+    background: #00000088;
+    backdrop-filter: blur(8px);
+    color: var(--background-clr);
+    border: 1px solid #ffffff11;
+    border-radius: 1rem;
+    min-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    user-select: none;
+}
+
+
+
+.login-forgot{
+    text-align: center;
+    margin: 1rem 0;
+}

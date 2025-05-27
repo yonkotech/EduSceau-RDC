@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/components/button.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/components/input.css">
+    <link rel="stylesheet" href="style/components/caroussel.css">
+    <title>Inscription - EduSceau RDC</title>
+</head>
+
+<body>
+    <form class="container signup-form">
+        <!-- Étapes radio -->
+        <input type="radio" name="step" id="step1" checked>
+        <input type="radio" name="step" id="step2">
+        <input type="radio" name="step" id="step3">
+        <input type="radio" name="step" id="step4">
+        <!-- Progression -->
+        <div class="steps">
+            <span>1</span><span>2</span><span>3</span><span>4</span>
+        </div>
+
+        <div class="step-content">
+            
+            <div class="form-step step1">
+                <h1>Inscription</h1>
+                <div class="input">
+                    <input type="text" name="name" required>
+                    <label for="name">nom</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="midname" required>
+                    <label for="midname">postnom</label>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="lastname" required>
+                    <label for="lastname">prenom</label>
+                </div>
+
+                <div>
+                    <p class="login-forgot">Vous avez deja un compte ?
+                        <a href="signup.html" class="link">Se connecter</a> <br>
+                    </p>
+                </div>
+                <div class="navigation">
+                    <label for="step2">Suivant</label>
+                </div>
+            </div>
+            <div class="form-step step2">
+                <h1>Inscription</h1>
+                <div class="input">
+                    <input type="text" name="email" required>
+                    <label for="email">mot de passe</label>
+                </div>
+
+                <div>
+                    <p class="login-forgot">Vous avez deja un compte ?
+                        <a href="signup.html" class="link">Se connecter</a> <br>
+                    </p>
+                </div>
+                <div class="navigation">
+                    <label for="step1">Précédent</label>
+                    <label for="step3">Suivant</label>
+                </div>
+            </div>
+            <div class="form-step step3">
+                <h1>Inscription</h1>
+                <div class="input">
+                    <input type="text" name="email" required>
+                    <label for="email">email ou numero de téléphone</label>
+                </div>
+
+
+                <div>
+                    <p class="login-forgot">Vous avez deja un compte ?
+                        <a href="signup.html" class="link">Se connecter</a> <br>
+                    </p>
+                </div>
+                <div class="navigation">
+                    <label for="step2">Précédent</label>
+                    <label for="step4">Suivant</label>
+                </div>
+            </div>
+            <div class="form-step step4">
+                <h1>Inscription</h1>
+                <div class="input">
+                    <input type="text" name="email" required>
+                    <label for="email">email ou numero de téléphone</label>
+                </div>
+
+
+                <div>
+                    <p class="login-forgot">Vous avez deja un compte ?
+                        <a href="signup.html" class="link">Se connecter</a> <br>
+                    </p>
+                </div>
+                <div class="navigation">
+                    <label for="step3">Précédent</label>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>

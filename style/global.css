@@ -1,0 +1,23 @@
+:root{
+    --primary-clr: black;
+    --secondary-clr: dodgerblue;
+    --tertiary-clr: green;
+    --background-clr: white;
+}
+
+body{
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("https://picsum.photos/1000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    font-weight: bold;
+}
