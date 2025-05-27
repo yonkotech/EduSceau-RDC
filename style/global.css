@@ -4,7 +4,9 @@
     --background-clr: white;
 }
 body{
-    background: url("../debug.webp");
+    background: url("https://picsum.photos/1000");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0;
     height: 100vh;
     margin: 0;
