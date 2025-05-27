@@ -2,7 +2,6 @@
 
 .input{
     position: relative;
-    
 }
 
 .input>label{
@@ -10,4 +9,5 @@
     top: 0;
     left: 0;
     color: var(--secondary-clr);
+    user-select: none;
 }
