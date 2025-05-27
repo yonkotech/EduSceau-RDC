@@ -1,6 +1,7 @@
 :root{
     --primary-clr: black;
     --secondary-clr: dodgerblue;
+    --tertiary-clr: green;
     --background-clr: white;
 }
 body{
@@ -16,7 +17,5 @@ body{
 }
 
 .link{
-    text-decoration: none;
-    text-align: center;
-    color: white;
+    font-weight: bold;
 }

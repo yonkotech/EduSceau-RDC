@@ -1,13 +1,54 @@
 @import url("../global.css");
 
-.input{
+.input {
     position: relative;
+    overflow: visible;
+    min-width: 320px;
 }
 
-.input>label{
+
+.input input {
+    border: none;
+    border-bottom: 1px solid var(--background-clr);
+    width: 100%;
+    padding: 7px 0;
+    margin: 1px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    outline: none;
+    background: transparent;
+    color: var(--secondary-clr);
+    font-weight: bold;
+}
+
+
+.input input::placeholder {
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.input label {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 8px;
+    padding: 7px 0;
+    font-size: 1.2em;
     color: var(--secondary-clr);
-    user-select: none;
+    pointer-events: none;
+    transition: 0.23s;
+    font-style: italic;
+}
+
+.input input:focus~label,
+.input input:valid~label {
+    top: -13px;
+    left: 0;
+    color: var(--tertiary-clr);
+    font-size: 0.8em;
+}
+
+.input input:focus::placeholder,
+.input input:valid::placeholder {
+    opacity: 1;
+    font-weight: 800;
 }
