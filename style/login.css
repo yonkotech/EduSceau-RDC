@@ -1,7 +1,10 @@
+@import url("global.css");
+
 form{
-    background-color: dodgerblue;
-    color: white;
-    border: 1px solid dodgerblue;
+    background: #00000088;
+    backdrop-filter: blur(8px);
+    color: var(--background-clr);
+    border: 1px solid #ffffff11;
     border-radius: 15px;
     width: 500PX;
     height: 250px;

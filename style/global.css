@@ -1,5 +1,10 @@
-
+:root{
+    --primary-clr: black;
+    --secondary-clr: dodgerblue;
+    --background-clr: white;
+}
 body{
+    background: url("../debug.webp");
     padding: 0;
     height: 100vh;
     margin: 0;
