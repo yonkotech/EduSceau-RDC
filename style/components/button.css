@@ -7,7 +7,6 @@
     display: inline-block;
     text-align: center;
     font-weight: 600;
-    padding: 0.134em 0.536em;
     border: 2px solid var(--background-clr);
     border-radius: 4px;
     position: relative;
@@ -19,9 +18,17 @@
     transition: 0.3s ease all;
     z-index: 1;
     cursor: pointer;
-    height: 34px;
     outline: none;
+    max-height: 34px;
+      padding: 0.4rem 1rem;
+  border-radius: 5px;
 }
+
+.bouton.green{
+    background: var(--tertiary-clr);
+}
+
+
 
 .bouton:before {
     transition: 0.3s all ease;

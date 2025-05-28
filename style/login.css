@@ -1,6 +1,6 @@
 @import url("global.css");
 
-form{
+form.container, form.form{
     background: #00000088;
     backdrop-filter: blur(8px);
     color: var(--background-clr);
@@ -16,6 +16,11 @@ form{
     user-select: none;
 }
 
+h3{
+    font-style: italic;
+    font-weight: 300;
+    
+}
 
 
 .login-forgot{

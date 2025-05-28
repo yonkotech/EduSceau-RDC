@@ -1,0 +1,14 @@
+@import url("../global.css");
+
+select{
+    width: 100%;
+    min-width: 320px;
+    color: var(--secondary-clr);
+     padding: 7px 0;
+    margin: 1px;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+     border-bottom: 1px solid var(--background-clr);
+     outline: none;
+}

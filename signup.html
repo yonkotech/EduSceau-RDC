@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/components/button.css">
+    <link rel="stylesheet" href="style/components/select.css">
     <link rel="stylesheet" href="style/login.css">
     <link rel="stylesheet" href="style/components/input.css">
     <link rel="stylesheet" href="style/components/caroussel.css">
@@ -21,13 +22,14 @@
         <input type="radio" name="step" id="step4">
         <!-- Progression -->
         <div class="steps">
-            <span>1</span><span>2</span><span>3</span><span>4</span>
+            <span class="checked">1</span><span>2</span><span>3</span><span>4</span>
         </div>
+        <h1>Inscription</h1>
 
         <div class="step-content">
-            
+
             <div class="form-step step1">
-                <h1>Inscription</h1>
+                <h3>Preciser vos informations personnelles</h3>
                 <div class="input">
                     <input type="text" name="name" required>
                     <label for="name">nom</label>
@@ -44,69 +46,91 @@
 
                 <div>
                     <p class="login-forgot">Vous avez deja un compte ?
-                        <a href="signup.html" class="link">Se connecter</a> <br>
+                        <a href="login.html" class="link">Se connecter</a> <br>
                     </p>
                 </div>
                 <div class="navigation">
-                    <label for="step2">Suivant</label>
+                    <label for="step2" class="next bouton">Suivant</label>
                 </div>
             </div>
+
             <div class="form-step step2">
-                <h1>Inscription</h1>
+                <h3>Il est temps de vous trouver un mot de passe</h3>
                 <div class="input">
                     <input type="text" name="email" required>
-                    <label for="email">mot de passe</label>
+                    <label for="email">email ou numero de téléphone</label>
                 </div>
+                <div class="input">
+                    <input type="password" name="password" required>
+                    <label for="password">nouveau mot de passe</label>
+                </div>
+                <div class="input">
+                    <input type="password" name="password-c" required>
+                    <label for="password-c">confirmation mot de passe</label>
+                </div>
+
 
                 <div>
                     <p class="login-forgot">Vous avez deja un compte ?
-                        <a href="signup.html" class="link">Se connecter</a> <br>
+                        <a href="login.html" class="link">Se connecter</a> <br>
                     </p>
                 </div>
                 <div class="navigation">
-                    <label for="step1">Précédent</label>
-                    <label for="step3">Suivant</label>
+                    <label for="step1" class="previous bouton">Précédent</label>
+                    <label for="step3" class="next bouton">Suivant</label>
                 </div>
             </div>
+
             <div class="form-step step3">
-                <h1>Inscription</h1>
-                <div class="input">
-                    <input type="text" name="email" required>
-                    <label for="email">email ou numero de téléphone</label>
-                </div>
-
+                <h3>Choisir le type de compte</h3>
+                <select name="user_type" id="">
+                    <option value="1">Eleve</option>
+                    <option value="2">Enseignant</option>
+                    <option value="3">Parent</option>
+                    <option value="4">Directeur/Prefet</option>
+                    <option value="5">Recruteur</option>
+                    <option value="5">Inspecteur</option>
+                </select>
 
                 <div>
                     <p class="login-forgot">Vous avez deja un compte ?
-                        <a href="signup.html" class="link">Se connecter</a> <br>
+                        <a href="login.html" class="link">Se connecter</a> <br>
                     </p>
                 </div>
                 <div class="navigation">
-                    <label for="step2">Précédent</label>
-                    <label for="step4">Suivant</label>
+                    <label for="step2" class="previous bouton">Précédent</label>
+                    <label for="step4" class="next bouton">Suivant</label>
                 </div>
             </div>
+            
             <div class="form-step step4">
-                <h1>Inscription</h1>
+                <h1>Finalisation</h1>
                 <div class="input">
-                    <input type="text" name="email" required>
-                    <label for="email">email ou numero de téléphone</label>
+                    <input type="text" name="school" required>
+                    <label for="school">nom de l'ecole</label>
+                </div>
+
+                <div class="input">
+                    <input type="date" name="birth" id="" required>
+                    <label for="birth" >date de naissance</label>
                 </div>
 
 
                 <div>
                     <p class="login-forgot">Vous avez deja un compte ?
-                        <a href="signup.html" class="link">Se connecter</a> <br>
+                        <a href="login.html" class="link">Se connecter</a> <br>
                     </p>
                 </div>
                 <div class="navigation">
-                    <label for="step3">Précédent</label>
-
+                    <label for="step3" class="previous bouton">Précédent</label>
+                    <button class="bouton">Valider</button>
                 </div>
             </div>
 
         </div>
     </form>
+
+    <script src="js/signup.js"></script>
 </body>
 
 </html>

@@ -39,9 +39,23 @@
     font-style: italic;
 }
 
+.input input[type="date"] {
+  background: none;
+  font-size: 1.4em;
+  transition: background-color 0.3s ease;
+  color: transparent;
+}
+
+.input input[type="date"]:focus {
+  outline: none;
+  color: var(--secondary-clr);
+}
+
+
+
 .input input:focus~label,
 .input input:valid~label {
-    top: -13px;
+    top: -20px;
     left: 0;
     color: var(--tertiary-clr);
     font-size: 0.8em;
@@ -52,3 +66,5 @@
     opacity: 1;
     font-weight: 800;
 }
+
+
