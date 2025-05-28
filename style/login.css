@@ -16,10 +16,18 @@ form.container, form.form{
     user-select: none;
 }
 
+form.w500{
+    max-width: 500px;
+}
+
+form.form h3{
+    font-size: 1em;
+    text-align: center;
+}
+
 h3{
     font-style: italic;
     font-weight: 300;
-    
 }
 
 
